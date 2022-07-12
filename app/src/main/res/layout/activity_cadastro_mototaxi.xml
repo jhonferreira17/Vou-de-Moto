@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_fundo_app"
+    tools:context=".Activity.CadastroMototaxiActivity"
+    android:fillViewport="true">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+  <!--Titulo dados pessoais-->
+  <TextView
+      android:id="@+id/textDadosPessoais"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:text="Dados pessoais"
+      android:textColor="@color/corDeTexto"
+      android:textSize="20dp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="@+id/editNomeMototaxi"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <!--Adicionar foto do mototaxi-->
+  <Button
+      android:id="@+id/btnAdicionarFotoMototaxi"
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:background="@drawable/btn_add_foto"
+      android:text="Adicionar foto"
+      android:textAllCaps="false"
+      android:textColor="@color/white"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textDadosPessoais" />
+
+  <!--Nome do mototaxi-->
+  <EditText
+      android:id="@+id/editNomeMototaxi"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="32dp"
+      android:background="@drawable/bg_edit_text"
+      android:ems="10"
+      android:hint="Informe seu nome completo"
+      android:inputType="textPersonName"
+      android:minHeight="48dp"
+      android:padding="10dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/btnAdicionarFotoMototaxi"
+      tools:ignore="TextContrastCheck" />
+
+  <!--Contato do mototaxi-->
+  <EditText
+      android:id="@+id/editContatoMototaxi"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="32dp"
+      android:background="@drawable/bg_edit_text"
+      android:ems="10"
+      android:minHeight="48dp"
+      android:padding="10dp"
+      android:hint="Contato"
+      android:inputType="phone"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editNomeMototaxi" />
+
+
+  <!--E-mail do mototaxi-->
+  <EditText
+      android:id="@+id/editEmailMototaxi"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="32dp"
+      android:background="@drawable/bg_edit_text"
+      android:ems="10"
+      android:minHeight="48dp"
+      android:padding="10dp"
+      android:hint="E-mail"
+      android:inputType="textEmailAddress"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editContatoMototaxi" />
+
+  <!--Senha do mototaxi-->
+  <EditText
+      android:id="@+id/editSenhaMototaxi"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="32dp"
+      android:background="@drawable/bg_edit_text"
+      android:ems="10"
+      android:hint="Digite sua senha"
+      android:inputType="textPassword"
+      android:padding="16dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editEmailMototaxi"
+      tools:ignore="TextContrastCheck" />
+
+  <!--texto dados do veiculo-->
+  <TextView
+      android:id="@+id/textDadosDoVeiculo"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:text="Dados do Veiculo"
+      android:textColor="@color/corDeTexto"
+      android:textSize="20dp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="@+id/editSenhaMototaxi"
+      app:layout_constraintTop_toBottomOf="@+id/editSenhaMototaxi" />
+
+  <!--CNH do mototaxi-->
+  <EditText
+      android:id="@+id/editCNH_Mototaxi"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="32dp"
+      android:background="@drawable/bg_edit_text"
+      android:ems="10"
+      android:hint="Digite sua CNH"
+      android:inputType="textPersonName"
+      android:minHeight="48dp"
+      android:padding="10dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textDadosDoVeiculo"
+      tools:ignore="TextContrastCheck" />
+
+  <EditText
+      android:id="@+id/editNumeroDeSerie"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="32dp"
+      android:background="@drawable/bg_edit_text"
+      android:ems="10"
+      android:inputType="textPersonName"
+      android:minHeight="48dp"
+      android:padding="10dp"
+      android:hint="Não sei"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editCNH_Mototaxi" />
+
+  <!--modelo da moto-->
+  <EditText
+      android:id="@+id/editModeloDaMoto"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="32dp"
+      android:background="@drawable/bg_edit_text"
+      android:ems="10"
+      android:inputType="textPersonName"
+      android:minHeight="48dp"
+      android:padding="10dp"
+      android:hint="Modelo da moto"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editPlacaDaMoto" />
+
+  <!--Cor da Moto-->
+  <EditText
+      android:id="@+id/editCorDaMoto"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="32dp"
+      android:background="@drawable/bg_edit_text"
+      android:ems="10"
+      android:inputType="textPersonName"
+      android:minHeight="48dp"
+      android:padding="10dp"
+      android:hint="Informe a cor de sua moto"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editModeloDaMoto" />
+
+  <Button
+      android:id="@+id/buttonCadastrarMototaxi"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="32dp"
+      android:background="@drawable/bg_button"
+      android:text="Cadastrar"
+      android:textAllCaps="false"
+      android:textColor="@color/white"
+      android:textSize="20dp"
+      android:textStyle="normal"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editCorDaMoto"
+      tools:ignore="TextContrastCheck" />
+
+
+  <ProgressBar
+      android:id="@+id/progressBar2"
+      style="?android:attr/progressBarStyle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:indeterminateTint="@color/white"
+      android:visibility="gone"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/buttonCadastrarMototaxi"
+      app:layout_constraintVertical_bias="0.229"
+      tools:visibility="visible" /> />
+
+  <EditText
+      android:id="@+id/editPlacaDaMoto"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="32dp"
+      android:background="@drawable/bg_edit_text"
+      android:ems="10"
+      android:inputType="textPersonName"
+      android:minHeight="48dp"
+      android:padding="10dp"
+      android:hint="Informe a placa"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editNumeroDeSerie" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

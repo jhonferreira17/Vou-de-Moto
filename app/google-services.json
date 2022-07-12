@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "145620094463",
+    "project_id": "app-voudemoto",
+    "storage_bucket": "app-voudemoto.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:145620094463:android:941630222a7cf18dc6ebca",
+        "android_client_info": {
+          "package_name": "com.example.voudemotooficial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "145620094463-4kffp4hn30k8m2prgsvofculefj4aq17.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.voudemotooficial",
+            "certificate_hash": "9ced89300766d8710567c4ed8ad6e80e449fa201"
+          }
+        },
+        {
+          "client_id": "145620094463-dd32k2eidre3jvmrei636fp58u3jrve5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXwHd_aO4Tl9abo8GEz90qPRZz907G17U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "145620094463-dd32k2eidre3jvmrei636fp58u3jrve5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
