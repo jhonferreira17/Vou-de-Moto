@@ -13,47 +13,7 @@ public class Requisicao {
     private String status;
     private Usuario passageiro;
 
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
-
-    public Usuario getPassageiro() {
-        return passageiro;
-    }
-
-    public void setPassageiro(Usuario passageiro) {
-        this.passageiro = passageiro;
-    }
-
-    public Usuario getMotorista() {
-        return motorista;
-    }
-
-    public void setMotorista(Usuario motorista) {
-        this.motorista = motorista;
-    }
-
-    public Destino getDestino() {
-        return destino;
-    }
-
-    public void setDestino(Destino destino) {
-        this.destino = destino;
-    }
-
-    private Usuario motorista;
+    private Usuario mototaxista;
     private Destino destino;
 
     public static final String STATUS_AGUARDANDO = "aguardando";
@@ -86,7 +46,7 @@ public class Requisicao {
         DatabaseReference requisicao = requisicoes.child(getId());
 
         Map objeto = new HashMap();
-        objeto.put("motorista", getMotorista() );
+        objeto.put("Mototaxista", getMototaxista() );
         objeto.put("status", getStatus());
 
         requisicao.updateChildren( objeto );
@@ -107,7 +67,7 @@ public class Requisicao {
 
     }
 
-    public void atualizarLocalizacaoMotorista(){
+    public void atualizarLocalizacaoMototaxista(){
 
         DatabaseReference firebaseRef = Config.getFirebaseDatabase();
         DatabaseReference requisicoes = firebaseRef
@@ -115,14 +75,53 @@ public class Requisicao {
 
         DatabaseReference requisicao = requisicoes
                 .child(getId())
-                .child("motorista");
+                .child("Mototaxista");
 
         Map objeto = new HashMap();
-        objeto.put("latitude", getMotorista().getLatitude() );
-        objeto.put("longitude", getMotorista().getLongitude());
+        objeto.put("latitude", getMototaxista().getLatitude() );
+        objeto.put("longitude", getMototaxista().getLongitude());
 
         requisicao.updateChildren( objeto );
 
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public Usuario getPassageiro() {
+        return passageiro;
+    }
+
+    public void setPassageiro(Usuario passageiro) {
+        this.passageiro = passageiro;
+    }
+
+    public Usuario getMototaxista() {
+        return mototaxista;
+    }
+
+    public void setMototaxista(Usuario mototaxista) {
+        this.mototaxista = mototaxista;
+    }
+
+    public Destino getDestino() {
+        return destino;
+    }
+
+    public void setDestino(Destino destino) {
+        this.destino = destino;
+    }
 }

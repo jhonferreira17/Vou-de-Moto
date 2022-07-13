@@ -18,7 +18,7 @@
         android:theme="@style/Theme.VouDeMotoOficial"
         tools:targetApi="31">
         <activity
-            android:name=".RequisicoesActivity"
+            android:name=".Activity.RequisicoesActivity"
             android:exported="false" />
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
