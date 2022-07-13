@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.voudemotooficial.Config.Config;
 import com.example.voudemotooficial.Model.Usuario;
 import com.example.voudemotooficial.databinding.ActivityCadastroPassageiroBinding;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -67,6 +68,7 @@ public class CadastroPassageiroActivity extends AppCompatActivity {
     }
 
     private void criarContaFirebase(Usuario usuario){
+        mAuth = Config.getFirebaseAutenticacao();
         mAuth.createUserWithEmailAndPassword(
                 usuario.getEmail(), usuario.getSenha()).addOnCompleteListener(task -> {
 
