@@ -8,6 +8,8 @@ import com.example.voudemotooficial.R;
 
 public class ActivityTeste extends AppCompatActivity {
 
+    // comentario
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
