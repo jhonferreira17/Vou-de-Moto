@@ -18,6 +18,9 @@
         android:theme="@style/Theme.VouDeMotoOficial"
         tools:targetApi="31">
         <activity
+            android:name=".Activity.TelaInicialActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activity.RequisicoesActivity"
             android:exported="false" />
         <!--
