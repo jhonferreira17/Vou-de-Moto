@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">VouDeMotoOficial</string>
     <string name="title_activity_maps_passageiro">MapsActivityPassageiro</string>
+    <string name="title_activity_maps_mototaxista">MapsActivityMototaxista</string>
 </resources>

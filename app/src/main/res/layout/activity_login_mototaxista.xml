@@ -15,7 +15,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -23,8 +24,10 @@
 
 
             <!--Login do UsuarioPassageiro-->
+            <!--Senha do UsuarioPassageiro-->
+
             <EditText
-                android:id="@+id/editEmailPassageiro"
+                android:id="@+id/editEmailMototaxista"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
@@ -36,16 +39,16 @@
                 android:inputType="textEmailAddress"
                 android:minHeight="48dp"
                 android:padding="10dp"
-                app:layout_constraintBottom_toTopOf="@+id/editSenhaPassageiro"
+                app:layout_constraintBottom_toTopOf="@+id/editSenhaMototaxista"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.442"
                 app:layout_constraintVertical_chainStyle="packed" />
-            <!--Senha do UsuarioPassageiro-->
+
             <EditText
-                android:id="@+id/editSenhaPassageiro"
+                android:id="@+id/editSenhaMototaxista"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
@@ -57,23 +60,23 @@
                 android:inputType="textPassword"
                 android:minHeight="48dp"
                 android:padding="10dp"
-                app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+                app:layout_constraintBottom_toTopOf="@+id/btnLoginMototaxista"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editEmailPassageiro" />
+                app:layout_constraintTop_toBottomOf="@+id/editEmailMototaxista" />
 
             <!--Criar Conta-->
             <TextView
-                android:id="@+id/textCadastro"
+                android:id="@+id/textCadastroMototaxista"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:text="Criar conta"
                 android:textColor="#FFFAFA"
-                app:layout_constraintStart_toStartOf="@+id/btnLogin"
-                app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+                app:layout_constraintStart_toStartOf="@+id/btnLoginMototaxista"
+                app:layout_constraintTop_toBottomOf="@+id/btnLoginMototaxista" />
 
             <!--Recuperar Conta-->
             <TextView
@@ -83,12 +86,12 @@
                 android:layout_marginTop="8dp"
                 android:text="Recuperar conta"
                 android:textColor="#FFFAFA"
-                app:layout_constraintEnd_toEndOf="@+id/btnLogin"
-                app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+                app:layout_constraintEnd_toEndOf="@+id/btnLoginMototaxista"
+                app:layout_constraintTop_toBottomOf="@+id/btnLoginMototaxista" />
 
             <!--Botao de Login-->
             <Button
-                android:id="@+id/btnLogin"
+                android:id="@+id/btnLoginMototaxista"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
@@ -100,14 +103,14 @@
                 android:textColor="#FFFAFA"
                 android:textSize="20dp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/progressBar"
+                app:layout_constraintBottom_toTopOf="@+id/progressBarMototaxista"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editSenhaPassageiro" />
+                app:layout_constraintTop_toBottomOf="@+id/editSenhaMototaxista" />
 
             <ProgressBar
-                android:id="@+id/progressBar"
+                android:id="@+id/progressBarMototaxista"
                 style="?android:attr/progressBarStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -118,14 +121,13 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+                app:layout_constraintTop_toBottomOf="@+id/btnLoginMototaxista"
                 tools:visibility="visible" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-
-        </ScrollView>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

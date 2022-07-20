@@ -5,7 +5,7 @@ import androidx.fragment.app.FragmentActivity;
 import android.os.Bundle;
 
 import com.example.voudemotooficial.R;
-import com.example.voudemotooficial.databinding.ActivityMapsPassageiroBinding;
+import com.example.voudemotooficial.databinding.ActivityMapsMototaxistaBinding;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -13,16 +13,16 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class MapsActivityPassageiro extends FragmentActivity implements OnMapReadyCallback {
+public class MapsActivityMototaxista extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
-    private ActivityMapsPassageiroBinding binding;
+    private ActivityMapsMototaxistaBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = ActivityMapsPassageiroBinding.inflate(getLayoutInflater());
+        binding = ActivityMapsMototaxistaBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
@@ -45,8 +45,8 @@ public class MapsActivityPassageiro extends FragmentActivity implements OnMapRea
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-3.135021, -58.438544);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Itacoatiara - Amazonas"));
+        LatLng sydney = new LatLng(-34, 151);
+        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
     }
 }

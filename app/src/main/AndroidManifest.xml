@@ -17,12 +17,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.VouDeMotoOficial"
         tools:targetApi="31">
-        <activity
-            android:name=".Activity.TelaInicialActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Activity.RequisicoesActivity"
-            android:exported="false" />
+
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 
@@ -38,6 +33,19 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyB7Aw1hEF3VsaCA6dvUN7TM78ykqEBD4w4" />
 
+        <activity
+            android:name=".Activity.MapsActivityMototaxista"
+            android:exported="false"
+            android:label="@string/title_activity_maps_mototaxista" />
+        <activity
+            android:name=".Activity.LoginMototaxistaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.TelaInicialActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.RequisicoesActivity"
+            android:exported="false" />
         <activity
             android:name=".Activity.MapsActivityPassageiro"
             android:exported="false"

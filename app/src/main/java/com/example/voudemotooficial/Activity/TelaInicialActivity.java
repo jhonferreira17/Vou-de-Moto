@@ -19,6 +19,8 @@ public class TelaInicialActivity extends AppCompatActivity {
 
         binding.bntPassageiro.setOnClickListener(v ->
                 startActivity(new Intent(TelaInicialActivity.this, LoginActivity.class)));
+        binding.bntMototaxista.setOnClickListener(v ->
+                startActivity(new Intent(TelaInicialActivity.this, LoginMototaxistaActivity.class)));
     }
     //fazer para o botão de mototaxista
 }

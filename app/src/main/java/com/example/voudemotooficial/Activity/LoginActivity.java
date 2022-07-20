@@ -45,9 +45,6 @@ public class LoginActivity extends AppCompatActivity {
 
         binding.textCadastro.setOnClickListener(v ->
                 startActivity(new Intent(this,CadastroPassageiroActivity.class)));
-
-        binding.textAbrirCadastroMototaxi.setOnClickListener(v ->
-         startActivity(new Intent(this, CadastroMototaxiActivity.class)));
     }
 
 
