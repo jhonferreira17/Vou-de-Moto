@@ -7,7 +7,6 @@ import android.os.Bundle;
 import com.example.voudemotooficial.R;
 
 public class ActivityTeste extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

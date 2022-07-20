@@ -20,7 +20,7 @@ public class SplashActivity extends AppCompatActivity {
 
         new Handler(getMainLooper()).postDelayed(() -> {
             finish();
-            startActivity(new Intent(this, LoginActivity.class));
+            startActivity(new Intent(this, TelaInicialActivity.class));
         },3000);
 
     }
