@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
 import com.example.voudemotooficial.Adapter.RequisicoesAdapter;
@@ -40,6 +41,23 @@ public class RequisicoesActivity extends AppCompatActivity {
         binding = ActivityRequisicoesBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         inicializarComponentes();
+    }
+
+    @Override
+    public  boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch (item.getItemId()){
+            case R.id.menuSair:
+                autenticacao.signOut();
+                finish();
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     private void inicializarComponentes(){
