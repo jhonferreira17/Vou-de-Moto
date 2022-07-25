@@ -13,21 +13,25 @@
         <entry key="..\:/AppMovel/app/src/main/res/layout/activity_recuperar_conta.xml" value="0.2" />
         <entry key="..\:/AppMovel/app/src/main/res/layout/activity_splash.xml" value="0.25" />
         <entry key="..\:/AppMovel/app/src/main/res/layout/activity_teste.xml" value="0.2" />
+        <entry key="..\:/Users/natas/Documents/Movel/Vou-de-Moto/app/src/main/res/drawable/bg_button.xml" value="0.192" />
+        <entry key="..\:/Users/natas/Documents/Movel/Vou-de-Moto/app/src/main/res/drawable/bg_edit_text.xml" value="0.192" />
+        <entry key="..\:/Users/natas/Documents/Movel/Vou-de-Moto/app/src/main/res/drawable/bg_navegation.xml" value="0.192" />
+        <entry key="..\:/Users/natas/Documents/Movel/Vou-de-Moto/app/src/main/res/drawable/circulo_cinza_navigation.xml" value="0.192" />
+        <entry key="..\:/Users/natas/Documents/Movel/Vou-de-Moto/app/src/main/res/drawable/circulo_verde_navigation.xml" value="0.192" />
+        <entry key="..\:/Users/natas/Documents/Movel/Vou-de-Moto/app/src/main/res/drawable/container_components.xml" value="0.192" />
+        <entry key="..\:/Users/natas/Documents/Movel/Vou-de-Moto/app/src/main/res/drawable/ic_baseline_location_on_24.xml" value="0.192" />
+        <entry key="..\:/Users/natas/Documents/Movel/Vou-de-Moto/app/src/main/res/drawable/icon_localizacao.xml" value="0.1" />
         <entry key="..\:/Users/natas/Documents/Movel/Vou-de-Moto/app/src/main/res/layout/activity_cadastro_passageiro.xml" value="0.16802536231884058" />
         <entry key="..\:/Users/natas/Documents/Movel/Vou-de-Moto/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/natas/Documents/Movel/Vou-de-Moto/app/src/main/res/layout/activity_login_mototaxista.xml" value="0.22" />
         <entry key="..\:/Users/natas/Documents/Movel/Vou-de-Moto/app/src/main/res/layout/activity_main.xml" value="0.16802536231884058" />
+        <entry key="..\:/Users/natas/Documents/Movel/Vou-de-Moto/app/src/main/res/layout/activity_maps_mototaxista.xml" value="0.2" />
+        <entry key="..\:/Users/natas/Documents/Movel/Vou-de-Moto/app/src/main/res/layout/activity_maps_passageiro.xml" value="0.25" />
+        <entry key="..\:/Users/natas/Documents/Movel/Vou-de-Moto/app/src/main/res/layout/activity_passageiro.xml" value="0.2890995260663507" />
         <entry key="..\:/Users/natas/Documents/Movel/Vou-de-Moto/app/src/main/res/layout/activity_requisicoes.xml" value="0.25" />
         <entry key="..\:/Users/natas/Documents/Movel/Vou-de-Moto/app/src/main/res/layout/adapter_requisicoes.xml" value="0.5562218890554723" />
-        <entry key="..\:/movel/Vou-de-Moto/app/src/main/res/layout/activity_login.xml" value="0.1" />
-        <entry key="..\:/movel/Vou-de-Moto/app/src/main/res/layout/activity_login_mototaxista.xml" value="0.75" />
-        <entry key="..\:/movel/Vou-de-Moto/app/src/main/res/layout/activity_main.xml" value="0.22447916666666667" />
-        <entry key="..\:/movel/Vou-de-Moto/app/src/main/res/layout/activity_maps_passageiro.xml" value="0.22447916666666667" />
-        <entry key="..\:/movel/Vou-de-Moto/app/src/main/res/layout/activity_recuperar_conta.xml" value="0.22447916666666667" />
-        <entry key="..\:/movel/Vou-de-Moto/app/src/main/res/layout/activity_requisicoes.xml" value="0.33" />
-        <entry key="..\:/movel/Vou-de-Moto/app/src/main/res/layout/activity_splash.xml" value="0.22447916666666667" />
-        <entry key="..\:/movel/Vou-de-Moto/app/src/main/res/layout/activity_tela_inicial.xml" value="0.22447916666666667" />
-        <entry key="..\:/movel/Vou-de-Moto/app/src/main/res/layout/activity_teste.xml" value="0.22447916666666667" />
-        <entry key="..\:/movel/Vou-de-Moto/app/src/main/res/layout/adapter_requisicoes.xml" value="0.67" />
+        <entry key="..\:/Users/natas/Documents/Movel/Vou-de-Moto/app/src/main/res/layout/content_passgeiro.xml" value="0.2" />
+        <entry key="..\:/Users/natas/Documents/Movel/Vou-de-Moto/app/src/main/res/menu/menu_main.xml" value="0.19895833333333332" />
       </map>
     </option>
   </component>

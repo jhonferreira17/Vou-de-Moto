@@ -11,13 +11,20 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_vou_de_moto"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/ic_vou_de_moto"
         android:supportsRtl="true"
         android:theme="@style/Theme.VouDeMotoOficial"
         tools:targetApi="31">
-
+        <activity
+            android:name=".Activity.MototaxistaActivity"
+            android:exported="false"
+            android:label="@string/title_activity_mototaxista"
+            android:theme="@style/Theme.VouDeMotoOficial.NoActionBar" />
+        <activity
+            android:name=".Activity.PassageiroActivity"
+            android:exported="false" />
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 
@@ -34,10 +41,6 @@
             android:value="AIzaSyB7Aw1hEF3VsaCA6dvUN7TM78ykqEBD4w4" />
 
         <activity
-            android:name=".Activity.MapsActivityMototaxista"
-            android:exported="false"
-            android:label="@string/title_activity_maps_mototaxista" />
-        <activity
             android:name=".Activity.LoginMototaxistaActivity"
             android:exported="false" />
         <activity
@@ -46,10 +49,6 @@
         <activity
             android:name=".Activity.RequisicoesActivity"
             android:exported="false" />
-        <activity
-            android:name=".Activity.MapsActivityPassageiro"
-            android:exported="false"
-            android:label="@string/title_activity_maps_passageiro" />
         <activity
             android:name=".Activity.CadastroMototaxiActivity"
             android:exported="false" />

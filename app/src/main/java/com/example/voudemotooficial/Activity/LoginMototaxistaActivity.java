@@ -68,7 +68,7 @@ public class LoginMototaxistaActivity extends AppCompatActivity {
                 usuario.getEmail(), usuario.getSenha()).addOnCompleteListener(task -> {
             if(task.isSuccessful()){
                 finish();
-                startActivity(new Intent(LoginMototaxistaActivity.this, MapsActivityMototaxista.class));
+                startActivity(new Intent(LoginMototaxistaActivity.this,MototaxistaActivity.class));
             }else{
                 binding.progressBarMototaxista.setVisibility(View.GONE);
                 String excecao = "";

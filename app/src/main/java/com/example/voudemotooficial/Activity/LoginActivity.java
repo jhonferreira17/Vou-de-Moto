@@ -75,7 +75,7 @@ public class LoginActivity extends AppCompatActivity {
                 usuario.getEmail(), usuario.getSenha()).addOnCompleteListener(task -> {
                     if(task.isSuccessful()){
                         finish();
-                        startActivity(new Intent(LoginActivity.this, MapsActivityPassageiro.class));
+                        startActivity(new Intent(LoginActivity.this, PassageiroActivity.class));
                     }else{
                        binding.progressBar.setVisibility(View.GONE);
                         String excecao = "";
